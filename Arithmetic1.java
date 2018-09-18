@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 题目:两数之和
+ * 题目:*两数之和
  * 描述:
  * 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。
  * 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
@@ -16,6 +16,7 @@ import java.util.Map;
  * Created by WangJie on 2018/9/18.
  */
 public class Arithmetic1 {
+
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
