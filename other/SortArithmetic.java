@@ -186,16 +186,18 @@ public class SortArithmetic {
         int mid = size / (len << 1);
         int c = size & ((len << 1) - 1);
         //　-------归并到只剩一个有序集合的时候结束算法-------//
-        if (mid == 0)
+        if (mid == 0) {
             return;
+        }
         //　------进行一趟归并排序-------//
         for (int i = 0; i < mid; ++i) {
             s = i * 2 * len;
             merge(a, s, s + len, (len << 1) + s - 1);
         }
         //　-------将剩下的数和倒数一个有序集合归并-------//
-        if (c != 0)
+        if (c != 0) {
             merge(a, size - c - 2 * len, size - c, size - 1);
+        }
         //　-------递归执行下一趟归并排序------//
         mergeSort(a, 0, 2 * len);
     }
