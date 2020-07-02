@@ -48,7 +48,7 @@ public class Arithmetic51 {
                     if (ints[i][j] == 1) {
                         sb.append("Q");
                     } else {
-                        sb.append(".");
+                        sb.append("");
                     }
                 }
                 stringList.add(sb.toString());
